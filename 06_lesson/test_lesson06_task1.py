@@ -14,7 +14,7 @@ def test_dynamic_loading():
     driver = webdriver.Chrome()
     driver.get(URL)
 
-    wait = WebDriverWait(driver, 10)
+    wait = WebDriverWait(driver, 20)
     start_button = wait.until(
         EC.element_to_be_clickable((By.CSS_SELECTOR, "#start button"))
     )
